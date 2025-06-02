@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/connect.svg</file>
+        <file>image/disconnect.svg</file>
+        <file>image/update.svg</file>
+        <file>image/about.svg</file>
+        <file>image/is_connect.svg</file>
+        <file>image/is_not_connect.svg</file>
+        <file>image/properties.svg</file>
+        <file>image/rename.svg</file>
+        <file>image/language.svg</file>
+        <file>image/favicon_about.ico</file>
+        <file>image/favicon.ico</file>
+    </qresource>
+    <qresource prefix="/exe">
+        <file>exe/ExistOS_Updater_v1.1.2.exe</file>
+    </qresource>
+</RCC>

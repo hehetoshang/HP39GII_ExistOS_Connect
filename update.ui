@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UpdateWidget</class>
+ <widget class="QWidget" name="UpdateWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>软件更新</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="HP39GII_ExistOS_Connect.qrc">
+    <normaloff>:/image/image/update.svg</normaloff>:/image/image/update.svg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#UpdateWidget {
+    background-color: #f5f5f5;
+}
+
+QLabel#titleLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+QLabel#statusLabel {
+    font-size: 14px;
+    color: #666;
+}
+
+QProgressBar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    height: 20px;
+}
+
+QProgressBar::chunk {
+    background-color: #4a86e8;
+    border-radius: 4px;
+}
+
+QTextEdit {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-family: &quot;Courier New&quot;, monospace;
+    font-size: 12px;
+}
+
+QPushButton {
+    background-color: #4a86e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #3a76d8;
+}
+
+QPushButton:pressed {
+    background-color: #2a66c8;
+}
+
+QPushButton:disabled {
+    background-color: #cccccc;
+    color: #666666;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>软件更新</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="text">
+      <string>准备更新...</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="logTextEdit">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="startUpdateButton">
+       <property name="text">
+        <string>开始更新</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="closeButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>关闭</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="HP39GII_ExistOS_Connect.qrc"/>
+ </resources>
+ <connections/>
+</ui>

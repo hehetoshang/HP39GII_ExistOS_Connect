@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AboutWidget</class>
+ <widget class="QWidget" name="AboutWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>307</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>关于</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="HP39GII_ExistOS_Connect.qrc">
+    <normaloff>:/image/image/about.svg</normaloff>:/image/image/about.svg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#AboutWidget {
+    background-color: #f5f5f5;
+}
+
+QLabel#titleLabel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+QLabel#versionLabel {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+QLabel#descriptionLabel {
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+QLabel#copyrightLabel {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+QPushButton {
+    background-color: #4a86e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 15px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #3a76d8;
+}
+
+QPushButton:pressed {
+    background-color: #2a66c8;
+}
+
+QFrame#line {
+    border: 1px solid #ccc;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QLabel" name="logoLabel">
+     <property name="minimumSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>80</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/image/image/logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>text</string>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QLabel" name="versionLabel">
+     <property name="text">
+      <string>text</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="descriptionLabel">
+     <property name="text">
+      <string>text</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="line">
+     <property name="frameShape">
+      <enum>QFrame::Shape::HLine</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Sunken</enum>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QLabel" name="copyrightLabel">
+     <property name="text">
+      <string>text</string>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignmentFlag::AlignHCenter">
+    <widget class="QPushButton" name="closeButton">
+     <property name="text">
+      <string>关闭</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="HP39GII_ExistOS_Connect.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>closeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>AboutWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>267</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>178</x>
+     <y>331</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
