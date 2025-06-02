@@ -1,5 +1,10 @@
 # ExistOS Connection Suite
 
+## [查看中文版本](README_CN.md)
+
+## Notice
+Currently, this program only supports Chinese interface and interaction. Multilingual support may be added in the future.
+
 ## Introduction
 The ExistOS Connection Suite is a Qt-based application designed to connect, manage, and update HP39GII devices. It provides a user - friendly interface for device connection, disconnection, renaming, updating, and viewing device properties. However, many of the logical functions are yet to be implemented, and the current version is mainly a UI prototype.
 
@@ -28,6 +33,3 @@ The ExistOS Connection Suite is a Qt-based application designed to connect, mana
 1. Open the `HP39GII_ExistOS_Connect.pro` file in Qt Creator.
 2. Configure the build environment.
 3. Build and run the application.
-
-## Chinese Version
-[查看中文版本](README_CN.md)

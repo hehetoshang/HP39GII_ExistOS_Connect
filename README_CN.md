@@ -1,5 +1,10 @@
 # ExistOS 连接套件
 
+## [View English Version](README.md)
+
+## 注意事项
+目前本程序仅支持中文界面和交互，后续可能会添加多语言支持。
+
 ## 简介
 ExistOS 连接套件是一个基于 Qt 开发的应用程序，用于连接、管理和更新 HP39GII 设备。它提供了一个用户友好的界面，支持设备连接、断开连接、重命名、更新以及查看设备属性等功能。不过，目前许多逻辑功能尚未实现，当前版本主要是一个 UI 原型。
 
@@ -28,6 +33,3 @@ ExistOS 连接套件是一个基于 Qt 开发的应用程序，用于连接、�
 1. 在 Qt Creator 中打开 `HP39GII_ExistOS_Connect.pro` 文件。
 2. 配置构建环境。
 3. 构建并运行应用程序。
-
-## 英文版本
-[View English Version](README.md)
